@@ -1,4 +1,10 @@
-import _ from "lodash";
+const reverse = (str) => {
+  const string = str.split('');
+  let newStr = [];
+  string.forEach((item) => {
+    newStr = [item, ...newStr];
+  });
+  return newStr.join('');
+};
 
-
-console.log(_.intersection([2, 1], [2, 3]));
+console.log(reverse('hellp'));
